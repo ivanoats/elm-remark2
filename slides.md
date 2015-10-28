@@ -99,6 +99,8 @@ main =
 - Pure functions - predictable and testable outcomes
 - Pattern Matching - clean code over complex if statements
 - Declarative vs Imperative
+- Scalable
+- Reactive
 
 ???
 
@@ -142,10 +144,10 @@ apm install linter linter-elm-make language-elm
 ```
 - Vim
   - https://github.com/ElmCast/elm-vim
-  
+
 - Elm Brunch
   - https://github.com/ivanoats/elm-brunch-starter
 ---
 # Demonstration
 ---
-# Best Elm resources
+# Other Elm resources
