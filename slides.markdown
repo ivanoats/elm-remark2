@@ -148,6 +148,22 @@ apm install linter linter-elm-make language-elm
 - Elm Brunch
   - https://github.com/ivanoats/elm-brunch-starter
 ---
-# Demonstration
+# Demonstration of Elm Brunch
 ---
-# Other Elm resources
+# Other Elm Resources
+
+- [Pragmatic Studio](https://pragmaticstudio.com/elm) video tutorials
+- [Elm Discuss](https://groups.google.com/forum/?fromgroups#!forum/elm-discuss) mailing list
+- [#elm]() channel on seattlehacks Slack
+- [Elmcasts.io](http://elmcasts.io)
+
+People to follow:
+- [Evan](https://twitter.com/evancz)
+- [Richard](https://twitter.com/rtfeldman)
+- [Yan Cui](https://twitter.com/theburningmonk)
+- [Pete](https://twitter.com/)
+- [Ivan](https://twitter.com/ivanoats)
+
+Organizations:
+- [Elm](https://twitter.com/elmlang)
+- [ElmSeattle](https://twitter.com/elmseattle)
