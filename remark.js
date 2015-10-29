@@ -3560,8 +3560,6 @@ function applyDefaults (dom, options) {
 
   if (options.hasOwnProperty('sourceUrl')) {
     var req = new dom.XMLHttpRequest();
-    console.log( options.sourceUrl);
-    debugger
     req.open('GET', options.sourceUrl, false);
     req.send();
     options.source = req.responseText.replace(/\r\n/g, '\n');
