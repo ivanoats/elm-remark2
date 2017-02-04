@@ -441,7 +441,7 @@ function getPageRule (stylesheet) {
   }
 }
 
-},{"../../resources":6,"../../highlighter":7}],"components/timer":[function(require,module,exports){
+},{"../../highlighter":6,"../../resources":7}],"components/timer":[function(require,module,exports){
 module.exports=require('g1DH7M');
 },{}],"g1DH7M":[function(require,module,exports){
 var utils = require('../../utils');
@@ -554,7 +554,7 @@ function extend (object) {
     return result;
   };
 }
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 /* Automatically generated */
 
 module.exports = {
@@ -563,52 +563,7 @@ module.exports = {
   containerLayout: "<div class=\"remark-notes-area\">\n  <div class=\"remark-top-area\">\n    <div class=\"remark-toolbar\">\n      <a class=\"remark-toolbar-link\" href=\"#increase\">+</a>\n      <a class=\"remark-toolbar-link\" href=\"#decrease\">-</a>\n      <span class=\"remark-toolbar-timer\"></span>\n    </div>\n  </div>\n  <div class=\"remark-bottom-area\">\n    <div class=\"remark-notes-current-area\">\n      <div class=\"remark-toggle\">Notes for current slide</div>\n      <div class=\"remark-notes\"></div>\n    </div>\n    <div class=\"remark-notes-preview-area\">\n      <div class=\"remark-toggle\">Notes for next slide</div>\n      <div class=\"remark-notes-preview\"></div>\n    </div>\n  </div>\n</div>\n<div class=\"remark-slides-area\"></div>\n<div class=\"remark-preview-area\"></div>\n<div class=\"remark-backdrop\"></div>\n<div class=\"remark-pause\">\n  <div class=\"remark-pause-lozenge\">\n    <span>Paused</span>\n  </div>\n</div>\n<div class=\"remark-help\">\n  <div class=\"remark-help-content\">\n    <h1>Help</h1>\n    <p><b>Keyboard shortcuts</b></p>\n    <table class=\"light-keys\">\n      <tr>\n        <td>\n          <span class=\"key\"><b>&uarr;</b></span>,\n          <span class=\"key\"><b>&larr;</b></span>,\n          <span class=\"key\">Pg Up</span>,\n          <span class=\"key\">k</span>\n        </td>\n        <td>Go to previous slide</td>\n      </tr>\n      <tr>\n        <td>\n          <span class=\"key\"><b>&darr;</b></span>,\n          <span class=\"key\"><b>&rarr;</b></span>,\n          <span class=\"key\">Pg Dn</span>,\n          <span class=\"key\">Space</span>,\n          <span class=\"key\">j</span>\n        </td>\n        <td>Go to next slide</td>\n      </tr>\n      <tr>\n        <td>\n          <span class=\"key\">Home</span>\n        </td>\n        <td>Go to first slide</td>\n      </tr>\n      <tr>\n        <td>\n          <span class=\"key\">End</span>\n        </td>\n        <td>Go to last slide</td>\n      </tr>\n      <tr>\n        <td>\n          <span class=\"key\">b</span>&nbsp;/\n          <span class=\"key\">m</span>&nbsp;/\n          <span class=\"key\">f</span>\n        </td>\n        <td>Toggle blackout / mirrored / fullscreen mode</td>\n      </tr>\n      <tr>\n        <td>\n          <span class=\"key\">c</span>\n        </td>\n        <td>Clone slideshow</td>\n      </tr>\n      <tr>\n        <td>\n          <span class=\"key\">p</span>\n        </td>\n        <td>Toggle presenter mode</td>\n      </tr>\n      <tr>\n        <td>\n          <span class=\"key\">t</span>\n        </td>\n        <td>Restart the presentation timer</td>\n      </tr>\n      <tr>\n        <td>\n          <span class=\"key\">?</span>,\n          <span class=\"key\">h</span>\n        </td>\n        <td>Toggle this help</td>\n      </tr>\n    </table>\n  </div>\n  <div class=\"content dismiss\">\n    <table class=\"light-keys\">\n      <tr>\n        <td>\n          <span class=\"key\">Esc</span>\n        </td>\n        <td>Back to slideshow</td>\n      </tr>\n    </table>\n  </div>\n</div>\n"
 };
 
-},{}],8:[function(require,module,exports){
-exports.addClass = function (element, className) {
-  element.className = exports.getClasses(element)
-    .concat([className])
-    .join(' ');
-};
-
-exports.removeClass = function (element, className) {
-  element.className = exports.getClasses(element)
-    .filter(function (klass) { return klass !== className; })
-    .join(' ');
-};
-
-exports.toggleClass = function (element, className) {
-  var classes = exports.getClasses(element),
-      index = classes.indexOf(className);
-
-  if (index !== -1) {
-    classes.splice(index, 1);
-  }
-  else {
-    classes.push(className);
-  }
-
-  element.className = classes.join(' ');
-};
-
-exports.getClasses = function (element) {
-  return element.className
-    .split(' ')
-    .filter(function (s) { return s !== ''; });
-};
-
-exports.hasClass = function (element, className) {
-  return exports.getClasses(element).indexOf(className) !== -1;
-};
-
-exports.getPrefixedProperty = function (element, propertyName) {
-  var capitalizedPropertName = propertyName[0].toUpperCase() +
-    propertyName.slice(1);
-
-  return element[propertyName] || element['moz' + capitalizedPropertName] ||
-    element['webkit' + capitalizedPropertName];
-};
-
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 (function(){/* Automatically generated */
 
 var hljs = (function() {
@@ -3500,6 +3455,51 @@ module.exports = {
 };
 
 })()
+},{}],8:[function(require,module,exports){
+exports.addClass = function (element, className) {
+  element.className = exports.getClasses(element)
+    .concat([className])
+    .join(' ');
+};
+
+exports.removeClass = function (element, className) {
+  element.className = exports.getClasses(element)
+    .filter(function (klass) { return klass !== className; })
+    .join(' ');
+};
+
+exports.toggleClass = function (element, className) {
+  var classes = exports.getClasses(element),
+      index = classes.indexOf(className);
+
+  if (index !== -1) {
+    classes.splice(index, 1);
+  }
+  else {
+    classes.push(className);
+  }
+
+  element.className = classes.join(' ');
+};
+
+exports.getClasses = function (element) {
+  return element.className
+    .split(' ')
+    .filter(function (s) { return s !== ''; });
+};
+
+exports.hasClass = function (element, className) {
+  return exports.getClasses(element).indexOf(className) !== -1;
+};
+
+exports.getPrefixedProperty = function (element, propertyName) {
+  var capitalizedPropertName = propertyName[0].toUpperCase() +
+    propertyName.slice(1);
+
+  return element[propertyName] || element['moz' + capitalizedPropertName] ||
+    element['webkit' + capitalizedPropertName];
+};
+
 },{}],4:[function(require,module,exports){
 var EventEmitter = require('events').EventEmitter
   , highlighter = require('./highlighter')
@@ -3560,9 +3560,14 @@ function applyDefaults (dom, options) {
 
   if (options.hasOwnProperty('sourceUrl')) {
     var req = new dom.XMLHttpRequest();
-    req.open('GET', options.sourceUrl, false);
+    req.open('GET', options.sourceUrl);
+    req.onload = function(e) {
+      if (this.status === 200) {
+        options.source = req.responseText.replace(/\r\n/g, '\n');
+      }
+    };
     req.send();
-    options.source = req.responseText.replace(/\r\n/g, '\n');
+
   }
   else if (!options.hasOwnProperty('source')) {
     sourceElement = dom.getElementById('source');
@@ -3591,7 +3596,7 @@ function unescape (source) {
   return source;
 }
 
-},{"events":1,"./highlighter":7,"./converter":9,"./resources":6,"./parser":10,"./models/slideshow":11,"./views/slideshowView":12,"./controllers/defaultController":13,"./dom":14,"./macros":15}],14:[function(require,module,exports){
+},{"events":1,"./highlighter":6,"./converter":9,"./parser":10,"./resources":7,"./models/slideshow":11,"./views/slideshowView":12,"./controllers/defaultController":13,"./dom":14,"./macros":15}],14:[function(require,module,exports){
 module.exports = Dom;
 
 function Dom () { }
@@ -4355,7 +4360,7 @@ SlideshowView.prototype.scaleElements = function () {
   self.scaler.scaleToFit(self.pauseElement, self.containerElement);
 };
 
-},{"components/timer":"g1DH7M","components/printing":"WB9Gte","./slideView":20,"./notesView":21,"../scaler":22,"../resources":6,"../utils":8}],13:[function(require,module,exports){
+},{"components/timer":"g1DH7M","components/printing":"WB9Gte","./slideView":20,"./notesView":21,"../scaler":22,"../resources":7,"../utils":8}],13:[function(require,module,exports){
 (function(){// Allow override of global `location`
 /* global location:true */
 
@@ -5455,7 +5460,7 @@ function highlightBlockSpans (block) {
   });
 }
 
-},{"components/slide-number":"1SyMdc","../converter":9,"../highlighter":7,"../utils":8}],21:[function(require,module,exports){
+},{"components/slide-number":"1SyMdc","../converter":9,"../highlighter":6,"../utils":8}],21:[function(require,module,exports){
 var converter = require('../converter');
 
 module.exports = NotesView;

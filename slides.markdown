@@ -5,18 +5,8 @@ Ivan Storck
 
 October 2015
 
-http://why-elm.elmseattle.org
+http://why-elm2.elmseattle.org
 ]
----
-
-class: center, middle, double-line-height
-# Welcome, and Thanks Sponsors!
-
-### 🎓 🏢 Code Fellows
-### 🌎 Aerobatic
-### 🍻 🍲 Seattle Startup Week
-
-❤️ Special thanks to Pete Vilter and Evan Czaplicki
 ---
 
 class: left
@@ -28,7 +18,7 @@ Who I am and What I Do:
 
 Based on my experience and talents,
 
-I bridge the gap between Computer Science and industry.
+I bridge the gap between Computer Science and Industry.
 
 I stand for:
 - Excellence and Craftsmanship
@@ -41,6 +31,9 @@ background-image: url(images/SarahJS.png)
 
 # JavaScript (according to Sarah Connor)
 
+???
+
+If Brendan Eich had his way, we would all be writing Scheme, a functional language, in the browser.
 ---
 # JavaScript
 .red[
